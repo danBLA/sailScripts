@@ -1,0 +1,28 @@
+#!/usr/bin/python
+
+import sys
+import os
+
+path_filename=os.path.abspath(__file__)
+executablesDir = os.path.split(path_filename)[0]
+sys.path.insert(0,os.path.join(executablesDir,"python"))
+
+# user defined classes
+from Solid import *
+from Domain import *
+
+solid = createSolidFromSTL("g6_schwert.stl")
+
+solid.scale(0.001)
+solid.writeToFile("scaled.stl")
+
+solid.repair()
+solid.writeToFile("end.stl")
+
+print("dx="+str(solid.getDx()))
+print("dy="+str(solid.getDy()))
+print("dz="+str(solid.getDz()))
+
+domain = Domain(solid)
+
+print domain
