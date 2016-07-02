@@ -8,8 +8,8 @@ class Domain(object):
 
         self._facXmin = 19.0
         self._facXmax =  3.3
-        self._facY    =  1.5
-        self._facZ    =  1.0
+        self._facY    =  3.0
+        self._facZ    =  0.5
 
         #self._nx = 34
         self._nx = 30

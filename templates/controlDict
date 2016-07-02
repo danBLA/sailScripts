@@ -58,7 +58,7 @@ functions
         UName               U;
         rhoName             rhoInf;
         log                 true;
-        rhoInf              1000;
+        rhoInf              1.205;
         CofR                (0.4974612746 -0.01671895744 0.125);
     }
 }
