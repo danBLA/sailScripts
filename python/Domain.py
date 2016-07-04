@@ -12,7 +12,8 @@ class Domain(object):
         self._facZ    =  0.5
 
         #self._nx = 34
-        self._nx = 30
+        #self._nx = 30
+        self._nx = 20
         self._ny = 0
         self._nz = 0
 
